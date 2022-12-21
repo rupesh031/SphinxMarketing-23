@@ -1,17 +1,18 @@
 import React from "react";
 import "./home.css";
-import landing from "../assets/landing.png";
-import MLogo from "../assets/Mlogo.png";
-import burger from "../assets/burger.png";
-import Slogo from "../assets/Slogo.png";
-import smoke from "../assets/smoke.png";
-import smoke2 from "../assets/smoke2.png";
-import smoke3 from "../assets/smoke3.png";
-import line from "../assets/line.png";
+import landing from "../../assets/landing.png";
+import MLogo from "../../assets/Mlogo.png";
+import burger from "../../assets/burger.png";
+import Slogo from "../../assets/Slogo.png";
+import smoke from "../../assets/smoke.png";
+import smoke2 from "../../assets/smoke2.png";
+import smoke3 from "../../assets/smoke3.png";
+import line from "../../assets/line.png";
+import Menu from "../menu/menu";
 
 function Home() {
   return (
-    <div className="background">
+    <div className="back">
       <img className="landing" src={landing} alt=""></img>
       <div className="smoke_grp">
         <img className="smoke" src={smoke} alt=""></img>
