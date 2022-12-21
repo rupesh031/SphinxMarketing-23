@@ -32,16 +32,12 @@ function Home() {
         <img className="burger shadowfilter" src={burger} alt=""></img>
       </div>
       <div className="main">
-        <div className="Lcontainer">
-          <img className="Mlogo shadowfilter" src={MLogo} alt=""></img>\
-        </div>
-
+        <img className="Mlogo shadowfilter" src={MLogo} alt=""></img>\
         <div className="content">
           {" "}
           Amidst the dusty desserts of Egypt we found some extraterrestrial
           elements. To discover join hands with us.{" "}
         </div>
-
         <button className="preReg shadowfilter">
           {" "}
           <span className="buttonText"> PRE-REGISTER</span>
