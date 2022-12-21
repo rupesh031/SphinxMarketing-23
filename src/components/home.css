@@ -1,0 +1,199 @@
+ @import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+ body {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+ }
+
+.landing
+{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow-y: hidden;
+    z-index: 0;
+}
+.main
+{
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.header
+{
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 15px;
+    margin: auto;
+   
+}
+.Mlogo :hover
+{
+    box-shadow: 0 0 100px #FFD747; 
+}
+.Mlogo{
+    z-index:2;
+  }
+
+  .shadowfilter {
+	-webkit-filter: drop-shadow(0px 0px 0px #FFD747);
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	
+}.shadowfilter:hover {
+	-webkit-filter: drop-shadow(0px 0px 8px #FFD747);
+}
+
+.content
+{
+    margin:30px 5px;
+    width: 60%;
+font-family: 'Iceberg', cursive;
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 34px;
+text-align: center;
+letter-spacing: .15em;
+
+color: #FFFFFF;
+
+}
+
+.preReg
+{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 19px 52px;
+gap: 10px;
+background: #FFD747;
+box-shadow: 0px 0px 14px #FFC702;
+border-radius: 10px;
+border: transparent
+}
+
+.preReg :hover
+{
+    color: #111; 
+} 
+
+.buttonText
+{
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #5E4300;
+}
+
+.burger
+{
+    background: transparent;
+}
+
+.smoke_grp
+{
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.smoke{
+    position: absolute;
+    left: 20%;
+}
+.smoke2{
+    z-index: 5;
+    margin-left: auto;
+}
+.smoke3{
+    position: absolute;;
+    z-index: 1;
+   
+}
+.line
+{
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+}
+
+.line1
+{
+    position: absolute;
+    top:10%;
+    left: -1%;
+    transform: rotate(10deg);
+}
+
+.line2
+{
+    position: absolute;
+    bottom:5%;
+    left: 5%;
+    transform: rotate(40deg);
+}
+.line3
+{
+    position: absolute;
+    bottom:0%;
+    right: 20%;
+    transform: rotate(20deg);
+}
+.line4{
+    position: absolute;
+    bottom:30%;
+    right: 0%;
+}
+@keyframes line-flicker {
+    0% {
+      opacity: 0.4;
+    }
+    25% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.9;
+    }
+  
+    75% {
+      opacity: 0.6;
+    }
+  
+   
+    100% {
+      opacity: 0.4;
+    }
+  }
+  
+
+.line {
+    float: left;
+    -webkit-filter: drop-shadow(0px 0px 0px #FFD747);
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+    animation: line-flicker 4s linear infinite;
+  }
+
+  
