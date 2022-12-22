@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+* {
+    overflow: hidden;
+}
+
+.sponsors-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.sponsors-main>* {
+    padding: 100px;
+    padding-top: 10px;
+    padding-left: 200px;
+}
+
+.sponsors-main::before {
+    content: '';
+    background: url('./bg.png') no-repeat center center/cover;
+    /* width: 100%; */
+    /* background-size: contain; */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.496);
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(1);
+    z-index: -1;
+}
+
+#floating1 {
+    position: absolute;
+    left: -20px;
+    top: 470px;
+}
+
+#floating2 {
+    position: absolute;
+    left: 800px;
+    top: 130px;
+}
+
+#floating3 {
+    position: absolute;
+    right: -20px;
+    top: 470px;
+}
+
+#floating4 {
+    position: absolute;
+    left: 507px;
+    bottom: 20px;
+}
+.SponsorBack
+{
+    width: 100%;
+    height: 102vh;
+    position: absolute;
+    overflow-y: hidden;
+    z-index: 0;
+    background-position: center center;
+}

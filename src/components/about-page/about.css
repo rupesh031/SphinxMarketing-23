@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+
+*{
+    overflow: hidden;
+}
+/* #main{
+    background-color: #fff;
+    height: 127px;
+    width: 764px;
+    margin: -6px 0 -1px 18px;
+    position: relative;
+}
+#main:before{
+    width: 160px;
+    content: " ";
+    background-image: url(./bg.png);
+    position: absolute;
+    left: -16px;
+    top: -6px;
+} */
+.about-bgimage
+{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.about-main {
+    /* background: url(./bg.png); */
+    /* width: 100%;
+    height: 80%; */
+}
+
+.about-main::-webkit-scrollbar {
+    display: none;
+}
+
+.about-main {
+    overflow: hidden;
+    width: 100vw;
+    height: 84.6vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.about-main>* {
+    padding: 100px;
+    padding-top: 10px;
+    padding-left: 200px;
+}
+
+/* .about-main::before {
+    content: ''; */
+    /* background: url('./bg.png') no-repeat center center/cover; */
+    /* width: 100%; */
+    /* background-size: contain; */
+    /* position: absolute;
+    background-color: rgba(0, 0, 0, 0.496);
+    top: 115px;
+    left: 0px;
+    width: 100vw;
+    height: 84.6vh;
+    filter: brightness(1);
+    z-index: -1;
+} */
+
+.about-heading>p {
+    padding: 0 150px;
+    padding-top: 35px;
+    padding-left: 15px;
+    font-family: 'Iceberg';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 6px rgb(23 21 21 / 35%);
+}
+#floating1{
+    position: absolute;
+    left: -20px;
+    top: 470px;
+}
+#floating2{
+    position: absolute;
+    left: 800px;
+    top: 130px;
+}
+#floating3{
+    position: absolute;
+    right: -20px;
+    top: 570px;
+}
+#floating4{
+    position: absolute;
+    left: 507px;
+    bottom: 20px;
+}
+
+.about-heading
+{
+    position: relative;
+    width: 80%;
+    height: 87vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-logo
+{
+    width: 50%;
+    max-width: 400px;
+}
+
+.aline
+{
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+}
+
+.aline1
+{
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    transform: rotate(10deg);
+}
+
+.aline2
+{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    transform: rotate(127deg);
+}
+.aline3
+{
+    position: absolute;
+    bottom: 10%;
+    right: 20%;
+    transform: rotate(98deg);
+}
+.aline4{
+    position: absolute;
+    bottom: 47%;
+    right: 6%;
+}
+@keyframes line-flicker {
+    0% {
+      opacity: 0.4;
+    }
+    25% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 0.9;
+    }
+  
+    75% {
+      opacity: 0.6;
+    }
+  
+   
+    100% {
+      opacity: 0.4;
+    }
+  }
+  
+
+.aline {
+    float: left;
+    -webkit-filter: drop-shadow(0px 0px 0px #FFD747);
+	-webkit-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+    animation: line-flicker 4s linear infinite;
+  }
