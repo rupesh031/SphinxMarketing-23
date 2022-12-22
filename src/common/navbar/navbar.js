@@ -2,8 +2,11 @@ import React from "react";
 import burger from "../../assets/burger.png";
 import Slogo from "../../assets/Slogo.png";
 import Menu from "../../components/menu/menu";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+  const handleLogoClick = () => navigate("/");
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <>
@@ -13,7 +16,7 @@ function Navbar() {
         <></>
       )}
       <div className="header">
-        <div className="logo">
+        <div className="logo" onClick={handleLogoClick}>
           <img className="Slogo" src={Slogo} alt=""></img>
         </div>
 

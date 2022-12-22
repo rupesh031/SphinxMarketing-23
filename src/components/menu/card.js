@@ -3,18 +3,14 @@ import "./menu.css";
 import arrow from "../../assets/arrow.png";
 import { render } from "@testing-library/react";
 import About from "../about-page/about";
+import { useNavigate } from "react-router-dom";
 import Home from "../home/home";
 
 function Card(props) {
   const { name, logo, page } = props;
+
   return (
-    <div
-      className="Card "
-      onClick={() => {
-        console.log("press");
-        render(<Home />);
-      }}
-    >
+    <div className="Card ">
       <img className="card_img " src={logo} alt=""></img>
 
       <img className="arrow_img " src={arrow} alt=""></img>

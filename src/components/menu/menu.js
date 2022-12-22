@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import "./menu.css";
 import about from "../../assets/about.png";
 import events from "../../assets/events.png";
@@ -9,15 +9,17 @@ import insta from "../../assets/insta.png";
 import close from "../../assets/close.png";
 import facebook from "../../assets/facebook.png";
 import { render } from "@testing-library/react";
-import { Outlet, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import About from "../about-page/about";
 import Sponsors from "../sponsors-page/sponsors";
 
 function Menu(props) {
   const { setMenu, classN } = props;
+  const navigate = useNavigate();
+  const handleClick = (page) => navigate(page);
+
   return (
     <>
-      <div className="Mout">{/* <Outlet />{" "} */}</div>
       <div className={classN}>
         <img className="mLogo" src={MLogo} alt=""></img>
         <div className="closebtn">
@@ -28,14 +30,26 @@ function Menu(props) {
             alt=""
             onClick={() => {
               setMenu(false);
-              render(<Menu setMenu={setMenu} classN={"rollout"}></Menu>);
+              // render(<Menu setMenu={setMenu} classN={"rollout"}></Menu>);
             }}
           ></img>
         </div>
 
         <div className="Container">
-          <Card name={"ABOUT US"} logo={about} page={About}></Card>
-          <Card name={"SPONSOR US"} logo={sponsor} page={Sponsors}></Card>
+          <div
+            onClick={() => {
+              handleClick("/about");
+            }}
+          >
+            <Card name={"ABOUT US"} logo={about} page={"/about"}></Card>
+          </div>
+          <div
+            onClick={() => {
+              handleClick("/sponsor");
+            }}
+          >
+            <Card name={"SPONSOR US"} logo={sponsor} page={"/sponsor"}></Card>
+          </div>
           <Card name={"EVENTS"} logo={events}></Card>
         </div>
 

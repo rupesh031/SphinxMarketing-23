@@ -10,8 +10,7 @@ import line from "../../assets/line.png";
 import Menu from "../menu/menu";
 import Navbar from "../../common/navbar/navbar";
 
-function Home(props) {
-  const { setIsMenuOpen, isMenuOpen } = props;
+function Home() {
   return (
     <div className="back">
       <img className="landing" src={landing} alt=""></img>
@@ -28,7 +27,7 @@ function Home(props) {
           <img className="line3" src={line} alt=""></img>
           <img className="line4" src={line} alt=""></img>
         </div>
-        <Navbar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+        <Navbar />
         <div className="main">
           <img className="Mlogo shadowfilter" src={MLogo} alt=""></img>\
           <div className="content">
