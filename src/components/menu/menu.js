@@ -32,7 +32,7 @@ function Menu() {
           <a className="Limage" href="">
             <img className="social_img " src={insta} alt=""></img>
           </a>
-          <a className="Limage">
+          <a className="Limage" href="">
             <img className="social_img" src={facebook} alt=""></img>
           </a>
         </div>

@@ -73,6 +73,7 @@
     z-index: 3;
     display: none;
     transition: transform 1s;
+    pointer-events: none;
 }
 .card_title
 {
@@ -91,6 +92,7 @@ color: #FFFFFF;
 
 text-shadow: 0px 0px 9px rgba(255, 255, 255, 0.3);
 transition: transform 1s;
+pointer-events: none;
 
 }
 @keyframes width_anim {
@@ -115,6 +117,7 @@ transition: transform 1s;
 .Card :hover ~ .card_title
 {
     transform: translateY(-80px);
+    
 }
 @keyframes fade_in_show {
     0% {
