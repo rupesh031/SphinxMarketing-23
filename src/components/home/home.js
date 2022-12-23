@@ -14,7 +14,10 @@ import anim from "../../assets/anim1.gif";
 function Home() {
   return (
     <div className="back">
-      <img className="videoTag" src={anim} alt="my-gif" />
+      <div className="videoTag">
+        <img className="videoTag" src={anim} alt="my-gif" />
+      </div>
+
       <img className="landing" src={landing} alt=""></img>
       <>
         {/* <div className="smoke_grp">

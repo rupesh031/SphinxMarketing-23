@@ -5,11 +5,15 @@ import about_head from "../../assets/about_heading.png";
 import line from "../../assets/line.png";
 import "./about.css";
 import Navbar from "../../common/navbar/navbar";
+import anim from "../../assets/anim1.gif";
 
 function About() {
   return (
     <div className="about-bg">
       <img className="about-bgimage" src={bg}></img>
+      <div className="videoTag">
+        <img className="videoTag" src={anim} alt="my-gif" />
+      </div>
       <Navbar />
 
       <div className="line">

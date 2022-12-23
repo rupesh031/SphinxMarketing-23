@@ -4,7 +4,7 @@ import Box1 from "./box1";
 import Box2 from "./box2";
 import Navbar from "../../common/navbar/navbar";
 import line from "../../assets/line.png";
-
+import anim from "../../assets/anim1.gif";
 var page2 = 0;
 
 function Sponsors(props) {
@@ -12,6 +12,10 @@ function Sponsors(props) {
   const { setIsMenuOpen, isMenuOpen } = props;
   return (
     <div className="SponsorBack">
+      <div className="videoTag">
+        <img className="videoTag" src={anim} alt="my-gif" />
+      </div>
+
       <Navbar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
       <div className="floating-group">
         <img src={line} id="floating1" alt="" />
