@@ -32,9 +32,10 @@
 .mLogo
 {
     margin: 20px 0px;
-    width: 20%;
+    width: 100%;
+    max-width: 20vw;
     height: 60px;
-    max-width: 400px;
+   
 }
 
 .Card
@@ -62,14 +63,7 @@
     object-fit: cover;
     z-index: 0;
 }
-/* .card_hover
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    background: transparent;
-} */
+
 .arrow_img
 {
     position: relative;
@@ -242,3 +236,10 @@ color: #888888;
     left: 0;
     height: 100vh;
 } */
+
+.MenuLogo
+{
+    width: 20%;
+    min-width: 220px;
+    max-width: 400px;
+}

@@ -9,12 +9,15 @@ import smoke3 from "../../assets/smoke3.png";
 import line from "../../assets/line.png";
 import Menu from "../menu/menu";
 import Navbar from "../../common/navbar/navbar";
+import vid from "../../assets/Comp 1_1.mp4";
 
 function Home() {
   return (
     <div className="back">
+      <video className="videoTag" autoPlay loop muted>
+        {/* <source src={vid} type="video/mp4" /> */}
+      </video>
       <img className="landing" src={landing} alt=""></img>
-
       <>
         <div className="smoke_grp">
           <img className="smoke" src={smoke} alt=""></img>

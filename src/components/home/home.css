@@ -233,3 +233,10 @@ color: #5E4300;
     }
   }
   
+  .videoTag
+  {
+    position: absolute;
+    z-index:20;
+    width: 100%;
+    height: 100vh;
+  }

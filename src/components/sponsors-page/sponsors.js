@@ -8,6 +8,7 @@ import line from "../../assets/line.png";
 var page2 = 0;
 
 function Sponsors(props) {
+  const [join, setjoin] = React.useState(true);
   const { setIsMenuOpen, isMenuOpen } = props;
   return (
     <div className="SponsorBack">
@@ -20,7 +21,7 @@ function Sponsors(props) {
       </div>
 
       <div className="sponsors-main">
-        <Box1 />
+        {join ? <Box1 setjoin={setjoin} /> : <Box2 setjoin={setjoin} />}
         {/* <Box2 /> */}
       </div>
     </div>
