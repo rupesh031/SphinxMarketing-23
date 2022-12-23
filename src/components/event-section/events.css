@@ -88,16 +88,20 @@ filter: blur(107px); */
 .card-group {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    width: 680px;
+    justify-content: center;
+    width: 100%;
+    /* flex-wrap: wrap; */
 }
 
-.card-group>img {
-    width: 190px;
-    height: 280px;
+.card-group>img 
+{
+    max-width: 230px;
+    height: 326px;
     background: #501515;
-    box-shadow: 0px 3.45232px 5.17848px rgba(141, 6, 72, 0.32), 0px 3.45232px 17.2616px rgba(141, 6, 72, 0.35), 0px 3.45232px 10.357px rgba(141, 6, 72, 0.25), 0px 3.45232px 11.22px rgba(141, 6, 72, 0.25), 0px 3.45232px 20.7139px rgba(141, 6, 72, 0.25), 0px 3.45232px 34.5232px #8D0648;
+    box-shadow: 0px 3.45232px 5.17848px rgb(141 6 72 / 32%), 0px 3.45232px 17.2616px rgb(141 6 72 / 35%), 0px 3.45232px 10.357px rgb(141 6 72 / 25%), 0px 3.45232px 11.22px rgb(141 6 72 / 25%), 0px 3.45232px 20.7139px rgb(141 6 72 / 25%), 0px 3.45232px 34.5232px #8d0648;
     border-radius: 8px;
+    width: 22%;
+    margin: 10px 48px;
 }
 
 .btns {
