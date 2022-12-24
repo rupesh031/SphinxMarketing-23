@@ -7,15 +7,15 @@ function Events() {
   const event_list = [
     {
       img: `./event1.jpg`,
-      desc: "Coming Soon",
+      desc: "Think.Code.Innovate",
     },
     {
       img: `./event2.jpg`,
-      desc: "Coming Soon",
+      desc: "Enjoy the show",
     },
     {
       img: `./event3.jpg`,
-      desc: "Coming Soon",
+      desc: "Evening with robots",
     },
   ];
 

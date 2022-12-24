@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
 
-* {
-    overflow: hidden;
-}
+
 
 .sponsors-main {
     width: 100%;
@@ -14,6 +12,7 @@
     color: black;
     font-weight: bold;
     font-size: 2rem;
+    overflow: hidden;
 }
 
 
@@ -62,6 +61,7 @@
     height: 102vh;
     position: absolute;
     overflow-y: hidden;
+    object-fit: cover;
     z-index: 0;
-    background-position: center center;
+   
 }

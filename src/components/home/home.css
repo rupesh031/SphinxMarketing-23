@@ -12,6 +12,7 @@
     height: 102vh;
     position: absolute;
     overflow-y: hidden;
+    object-fit: cover;
     z-index: 0;
     background-position: center center;
 }
@@ -236,6 +237,7 @@ color: #5E4300;
   .videoTag
   {
     position: absolute;
+    object-fit: cover;
     z-index:20;
     width: 100%;
     height: 100vh;

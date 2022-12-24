@@ -22,6 +22,7 @@
 {
     position: absolute;
     width: 100%;
+    object-fit: cover;
     height: 100vh;
     z-index: 0;
 }
@@ -200,8 +201,5 @@
     {
         width: 90%;
     }
-    .about-logo
-    {
-        width: 85%;
-    }
+   
   }
