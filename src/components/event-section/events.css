@@ -181,7 +181,7 @@ overflow: scroll;
     /* width: 100%; */
     height: 64px;
     background: #FFD747;
-    box-shadow: 0px 0px 14px #ffc702;
+    box-shadow: 0px 0px 5px #ffc702;
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Iceberg';
@@ -192,11 +192,11 @@ overflow: scroll;
 .btns1 button:hover {
     color: white;
     border: 1px solid #FFD747;
-    filter: drop-shadow(0px 0px 14px #FFC452);
+    filter: drop-shadow(0px 0px 7px #FFC452);
     border-radius: 3px;
     background: none;
     border: 1px solid #FFD747;
-    filter: drop-shadow(0px 0px 14px #FFC702);
+    filter: drop-shadow(0px 0px 7px #FFC702);
     border-radius: 10px;
 }
 .btns2{
@@ -209,7 +209,7 @@ overflow: scroll;
 .btns2 button{
     color: white;
     border: 1px solid #FFD747;
-    filter: drop-shadow(0px 0px 14px #FFC452);
+    filter: drop-shadow(0px 0px 5px #FFC452);
     border-radius: 3px;
     background: none;
     border-radius: 10px;
@@ -218,7 +218,7 @@ overflow: scroll;
     font-size: 25px;
     width: 100%;
     border: 1px solid #FFD747;
-    filter: drop-shadow(0px 0px 14px #FFC702);
+    filter: drop-shadow(0px 0px 5px #FFC702);
     border-radius: 10px;
 
 }
@@ -234,7 +234,7 @@ overflow: scroll;
     width: 266px;
     height: 64px;
     background: #ffd74758;
-    box-shadow: 0px 0px 14px #FFC702;
+    box-shadow: 0px 0px 7px #FFC702;
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Iceberg';
@@ -302,7 +302,7 @@ overflow: scroll;
    .btns2
    {
     width: 50%;
-    height: 78px;
+    height: 65px;
     display: flex;
     min-width: 250px;
     margin: 10px 8px;
@@ -319,7 +319,7 @@ overflow: scroll;
     /* height: 64px; */
     background: #FFD747;
     padding: 15px 5px;
-    box-shadow: 0px 0px 14px #ffc702;
+    box-shadow: 0px 0px 6px #ffc702;
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Iceberg';
@@ -344,6 +344,7 @@ overflow: scroll;
    .card-group
    {
     flex-direction: column;
+    align-items: center;
    }
    .event-bg
    {
