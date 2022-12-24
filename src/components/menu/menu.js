@@ -112,7 +112,7 @@ function CMenu(props) {
             alt=""
             onClick={() => {
               setMenu(false);
-              render(<CMenu setMenu={setMenu} classN={"rollout"} />);
+              <CMenu setMenu={setMenu} classN={"rollout"} />;
             }}
           ></img>
         </div>
