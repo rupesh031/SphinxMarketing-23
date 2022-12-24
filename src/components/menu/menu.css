@@ -21,11 +21,11 @@
     position: absolute;
     background-color: #0C0C0C;
     height: 95vh;
-    overflow-y: hidden;
     width: 100%;
     display: flex;
     flex-direction: column;
     -webkit-filter: drop-shadow(0px 0px 30px #FFD747);
+
    align-items: center;
    animation: trans 1s ease-in-out;
    z-index: 10000;
@@ -289,7 +289,7 @@ color: #888888;
   }
   .background
   {
-    height: 95vh;
+    height: 100vh;
   }
   .underline
   {
@@ -331,4 +331,9 @@ color: #888888;
     animation: none;
     transform: translateY(120%);
   }
+  .background
+  {
+    overflow-y: scroll;
   }
+
+}
