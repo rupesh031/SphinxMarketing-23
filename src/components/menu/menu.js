@@ -24,10 +24,11 @@ function Menu(props) {
   return (
     <>
       <div className={classN}>
-        <div className="MenuLogo" onClick={handleLogoClick}>
-          <img className="mLogo" src={MLogo} alt=""></img>
+        <div className="Menu-Header">
+          <div className="MenuLogo" onClick={handleLogoClick}>
+            <img className="mLogo" src={MLogo} alt=""></img>
+          </div>
         </div>
-
         <div className="closebtn">
           {" "}
           <img
@@ -43,6 +44,7 @@ function Menu(props) {
 
         <div className="Container">
           <div
+            className="Card-con"
             onClick={() => {
               handleClick("/about");
             }}
@@ -50,6 +52,7 @@ function Menu(props) {
             <Card name={"ABOUT US"} logo={about} page={"/about"}></Card>
           </div>
           <div
+            className="Card-con"
             onClick={() => {
               handleClick("/sponsor");
             }}
@@ -57,6 +60,7 @@ function Menu(props) {
             <Card name={"SPONSOR US"} logo={sponsor} page={"/sponsor"}></Card>
           </div>
           <div
+            className="Card-con"
             onClick={() => {
               handleClick("/events");
             }}

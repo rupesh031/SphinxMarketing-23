@@ -188,3 +188,20 @@
 	transition: all 0.5s linear;
     animation: line-flicker 4s linear infinite;
   }
+
+  @media only screen and (max-width: 1200px) 
+  {
+    .about-heading
+    {
+        height: 100vh;
+        width: 85%;
+    }
+    .about-heading>p
+    {
+        width: 90%;
+    }
+    .about-logo
+    {
+        width: 85%;
+    }
+  }

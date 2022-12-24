@@ -17,12 +17,12 @@ function Sponsors(props) {
       </div>
 
       <Navbar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
-      <div className="floating-group">
+      {/* <div className="floating-group">
         <img src={line} id="floating1" alt="" />
         <img src={line} id="floating2" alt="" />
         <img src={line} id="floating3" alt="" />
         <img src={line} id="floating4" alt="" />
-      </div>
+      </div> */}
 
       <div className="sponsors-main">
         {join ? <Box1 setjoin={setjoin} /> : <Box2 setjoin={setjoin} />}

@@ -90,24 +90,83 @@ filter: blur(107px); */
     display: flex;
     justify-content: center;
     width: 100%;
-    /* flex-wrap: wrap; */
+    position: relative;
 }
 
-.card-group>img 
+.event-img 
+{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+    -webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+   
+}
+.event-img>img 
+{
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    position: absolute;
+   
+}
+.event-desc{
+    color: white;
+    height: fit-content;
+    position: absolute;
+    width: 80%;
+    margin: auto;
+    font-size: 1.6rem;
+    opacity: 0;
+    transition:  0.5s ease-in;
+    pointer-events: none;
+    text-align: center;
+ 
+}
+
+ .event-card :hover .event-cover
+{
+    -webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(80%) blur(6px);
+
+
+}
+.event-card :hover + .event-desc
+{
+  opacity: 1;
+}
+
+
+.event-card
 {
     max-width: 230px;
     height: 326px;
     background: #501515;
     box-shadow: 0px 3.45232px 5.17848px rgb(141 6 72 / 32%), 0px 3.45232px 17.2616px rgb(141 6 72 / 35%), 0px 3.45232px 10.357px rgb(141 6 72 / 25%), 0px 3.45232px 11.22px rgb(141 6 72 / 25%), 0px 3.45232px 20.7139px rgb(141 6 72 / 25%), 0px 3.45232px 34.5232px #8d0648;
     border-radius: 8px;
-    width: 22%;
+    width: 100%;
+    position: relative;
+    display: flex;
     margin: 10px 48px;
+    justify-content: center;
+    align-items: center;
 }
 
 .btns {
     display: flex;
-    justify-content: space-between;
-    width: 580px;
+    /* justify-content: space-between; */
+    justify-content: center;
+    width: 90%;
+    max-width: 580px;
+}
+.btns1{
+    width: 45%;
+    display: flex;
+    margin: 0px 8px;
 }
 
 .btns1 button {
@@ -115,14 +174,17 @@ filter: blur(107px); */
     /* color: wheat; */
     background: none;
     /* border: none; */
-    width: 266px;
+    width: 100%;
+    /* width: 266px; */
+    /* width: 100%; */
     height: 64px;
     background: #FFD747;
-    box-shadow: 0px 0px 14px #FFC702;
+    box-shadow: 0px 0px 14px #ffc702;
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Iceberg';
     font-size: 25px;
+    margin: auto;
 }
 
 .btns1 button:hover {
@@ -135,6 +197,12 @@ filter: blur(107px); */
     filter: drop-shadow(0px 0px 14px #FFC702);
     border-radius: 10px;
 }
+.btns2{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 8px;
+}
 
 .btns2 button{
     color: white;
@@ -146,12 +214,11 @@ filter: blur(107px); */
     cursor: pointer;
     font-family: 'Iceberg';
     font-size: 25px;
-    width: 266px;
-    height: 64px;
-    background: black;
+    width: 100%;
     border: 1px solid #FFD747;
     filter: drop-shadow(0px 0px 14px #FFC702);
     border-radius: 10px;
+
 }
 .yt-icon img,.btns2 button:hover {
     /* filter: invert(1); */
@@ -210,3 +277,17 @@ filter: blur(107px); */
     filter: blur(107px);
     z-index: 3;
 }
+
+@media only screen and (max-width: 1200px) {
+    
+  
+   .btns
+   {
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+    }
