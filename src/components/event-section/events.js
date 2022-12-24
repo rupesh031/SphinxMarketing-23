@@ -48,9 +48,9 @@ function Events() {
           </div>
           <div className="desc">
             <p>
-              Lorem ipsum dolor sit amet consectetur. Dui sagittis cursus amet
-              quis. Sollicitudin et id nibh commodo cursus id. Ut feugiat arcu
-              metus iaculis senectus.
+              Sphinx 2K23 is here, and it’s about to be better than ever, we’ll
+              be holding several events, tune into the events page regularly to
+              be in loop with the upcoming events and the registrations!
             </p>
           </div>
           <div className="btns">
@@ -62,14 +62,17 @@ function Events() {
                 </span>
               </button>
             </div>
-            <div className="btns2">
+            <a
+              href="https://www.instagram.com/p/B3u2YDgn2FH/?utm_source=ig_web_button_share_sheet"
+              className="btns2"
+            >
               <button>
                 Watch Video{" "}
                 <span className="yt-icon">
                   <img src={require("./yt-icon.png")} alt="" />
                 </span>
               </button>
-            </div>
+            </a>
           </div>
 
           <div className="card-group">

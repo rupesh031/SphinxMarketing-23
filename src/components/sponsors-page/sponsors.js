@@ -17,7 +17,7 @@ function Sponsors(props) {
       </div>
 
       <Navbar setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
-      <div className="line">
+      <div className="">
         <img className="aline1 " src={line} alt=""></img>
         <img className="aline2" src={line} alt=""></img>
         <img className="aline3" src={line} alt=""></img>

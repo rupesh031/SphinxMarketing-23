@@ -33,7 +33,7 @@
 {
     margin: 20px 0px;
     width: 100%;
-    max-width: 33vw;
+    max-width: 25vw;
     min-width: 200px
    
 }
@@ -41,7 +41,7 @@
 .Card
 {
     z-index: 1000;
-    width: 154px;
+    width: 180px;
     height: 300px;
     padding: 20px;
    position: relative;
@@ -49,19 +49,41 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: width 300ms;
+    transition: all 350ms linear;
   margin: 20px 60px;
   background: transparent;
+ 
    
 }
+.Card :hover
+{
+    width: 180px;
+}
+
+.ImgCon
+{
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    z-index: 0;
+
+
+}
+
 
 .card_img
 {
     position: absolute;
-    width: 100%;
+    width: 130px;
     height: 100%;
+    transition: width 350ms ease-in-out;
     object-fit: cover;
     z-index: 0;
+}
+
+.card_img :hover
+{
+    width: 180px;
 }
 
 .arrow_img
@@ -69,7 +91,7 @@
     position: relative;
     z-index: 3;
     display: none;
-    transition: transform 1s;
+    transition: transform 350ms;
     pointer-events: none;
 }
 .card_title
@@ -87,28 +109,19 @@
     letter-spacing: 0.04em;
     color: #FFFFFF;
     text-shadow: 0px 0px 9px rgb(255 255 255 / 30%);
-    transition: transform 1s;
+    transition: transform 350ms;
     pointer-events: none;
 
 }
 @keyframes width_anim {
     0% {
-       
-         width: 160px;
+       width: 80px;
     }
-
     100% {
-        
-         width: 190px;
-         
+      width: 220px;
     }
 }
 
-.Card  :hover
-{
-    animation: width_anim 1s;
-    width: 190px;
-}
 
 .Card :hover ~ .card_title
 {
@@ -125,7 +138,7 @@
     90% {
          opacity: 1;
          transform: scale(1);
-         transform: translateY(380%);
+         transform: translateY(250%);
          
     }
 }
@@ -133,8 +146,8 @@
 {
     display: block;
    
-    animation: fade_in_show 1s;
-    transform: translateY(380%);
+    animation: fade_in_show 350ms;
+    transform: translateY(250%);
    
 }
 
@@ -224,7 +237,7 @@ color: #888888;
     -webkit-filter: drop-shadow(0px 0px 30px #FFD747);
      align-items: center;
     z-index: 10000;
-    animation: exit 1s ease-out;
+    animation: exit 500ms ease-out;
     transform: translateY(-120%);
 
 }
@@ -240,8 +253,8 @@ color: #888888;
 .MenuLogo
 {
    
-    min-width: 220px;
-    max-width: 400px;
+    /* min-width: 220px;
+    max-width: 400px; */
 }
 .Menu-Header
 {
@@ -301,5 +314,19 @@ color: #888888;
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  .card_img
+  {
+    width: 60%;
+  }
+  .Card :hover
+  {
+    width: 100%;
+  }
+  .Card :hover ~ .arrow_img
+  {
+    display: block;
+    animation: none;
+    transform: translateY(120%);
   }
   }

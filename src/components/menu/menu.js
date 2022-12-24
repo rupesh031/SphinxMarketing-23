@@ -76,10 +76,16 @@ function Menu(props) {
             <div className="underline"></div>
           </div>
           <div className="links">
-            <a className="Limage" href="https://www.instagram.com/">
+            <a
+              className="Limage"
+              href="https://instagram.com/sphinx_mnit?igshid=YmMyMTA2M2Y="
+            >
               <img className="social_img " src={insta} alt=""></img>
             </a>
-            <a className="Limage" href="https://www.instagram.com/">
+            <a
+              className="Limage"
+              href="https://www.facebook.com/sphinxMNIT?mibextid=ZbWKwL"
+            >
               <img className="social_img" src={facebook} alt=""></img>
             </a>
           </div>

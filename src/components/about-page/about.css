@@ -110,7 +110,7 @@
 {
     position: relative;
     width: 80%;
-    height: 87vh;
+    height: 75vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -192,9 +192,14 @@
 
   @media only screen and (max-width: 1200px) 
   {
+    .about-logo
+    {
+        min-width: 200px;
+    }
+
     .about-heading
     {
-        height: 100vh;
+        height: 75vh;
         width: 85%;
     }
     .about-heading>p
