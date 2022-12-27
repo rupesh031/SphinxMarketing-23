@@ -10,11 +10,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <>
-      {isMenuOpen ? (
-        <Menu setMenu={setIsMenuOpen} classN={"background"} />
-      ) : (
-        <></>
-      )}
+      {isMenuOpen ? <Menu setMenu={setIsMenuOpen} /> : <></>}
       <div className="header">
         <div className="logo" onClick={handleLogoClick}>
           <img className="Slogo" src={Slogo} alt=""></img>
