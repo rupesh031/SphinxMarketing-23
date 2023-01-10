@@ -35,7 +35,7 @@ function Home() {
         <div className="main">
           <img className="Mlogo shadowfilter" src={MLogo} alt=""></img>\
 //           <div className="content">
-//             {" "}
+//           {" "}
 //             Amidst the dusty desserts of Egypt we found some extraterrestrial
 //             elements. To discover join hands with us.{" "}
 //           </div>
