@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./home.css";
-import landing from "../../assets/landing.png";
+import landing from "../../assets/landing.webp";
 import MLogo from "../../assets/Mlogo.png";
 
 import smoke from "../../assets/smoke.png";
