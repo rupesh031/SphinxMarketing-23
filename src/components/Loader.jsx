@@ -1,8 +1,9 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import CircularProgress from "@material-ui/core/CircularProgress";
 
-const useStyles = makeStyles((theme) => ({
+import { styled } from "@mui/material";
+import CircularProgress from "@mui/material/CircularProgress";
+
+const useStyles = styled((theme) => ({
   root: {
     display: "flex",
     "& > * + *": {
@@ -26,10 +27,16 @@ export default function Loader() {
 
   return (
     <>
-      <div className={classes.rootBackground}>
-        <div className={classes.root}>
-          <CircularProgress color="secondary" />
-        </div>
+      <div
+        style={{
+          // do your styles depending on your needs.
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        {" "}
+        <CircularProgress color="inherit" style={{ height: "100%" }} />
       </div>
     </>
   );
