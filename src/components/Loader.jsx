@@ -1,5 +1,5 @@
 import React from "react";
-
+import load from './../assets/splash.gif'
 import { styled } from "@mui/material";
 import CircularProgress from "@mui/material/CircularProgress";
 
@@ -26,8 +26,10 @@ export default function Loader() {
   const classes = useStyles();
 
   return (
-    <>
-      <div
+    <div className="loader">
+      <img src={load} className="loader-back"></img>
+        {" "}
+      {/* <div
         style={{
           // do your styles depending on your needs.
           display: "flex",
@@ -35,9 +37,9 @@ export default function Loader() {
           alignItems: "center",
         }}
       >
-        {" "}
+      
         <CircularProgress color="inherit" style={{ height: "100%" }} />
-      </div>
-    </>
+      </div> */}
+    </div>
   );
 }
