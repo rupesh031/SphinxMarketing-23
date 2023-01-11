@@ -6,7 +6,7 @@ import line from "../../assets/line.png";
 import "./about.css";
 import Navbar from "../../common/navbar/navbar";
 import anim from "../../assets/anim1.gif";
-// import Loader from "../Loader";
+import Loader from "../Loader";
 function About() {
   const [isLoading, setLoading] = useState(false);
   useEffect(() => {
