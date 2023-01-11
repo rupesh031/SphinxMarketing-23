@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./menu.css";
-import about from "../../assets/about.png";
-import events from "../../assets/events.png";
-import sponsor from "../../assets/contact.png";
+import about from "../../assets/about.webp";
+import events from "../../assets/events.webp";
+import sponsor from "../../assets/contact.webp";
 import Card from "./card";
 import MLogo from "../../assets/Mlogo.png";
 import insta from "../../assets/insta.png";

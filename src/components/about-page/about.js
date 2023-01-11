@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import bg from "../../assets/about_bg.png";
+import bg from "../../assets/about_bg.webp";
 import about_head from "../../assets/about_heading.png";
 import line from "../../assets/line.png";
 import "./about.css";
