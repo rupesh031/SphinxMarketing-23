@@ -13,7 +13,7 @@ import anim from "../../assets/anim1.gif";
 import Loader from "../Loader";
 
 function Home() {
-  const [isLoading, setLoading] = useState(true);
+  const [isLoading, setLoading] = useState(false);
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
