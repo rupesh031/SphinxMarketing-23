@@ -72,7 +72,7 @@ function Events({ isLoading, setLoading }) {
             <div className="btns">
            <div className="btns1">
                 <button>
-                  Join Tech Events
+                  Surprise Soon!
                   <span className="arrow-icon">
                     <img src={require("./arrow-icon.png")} alt="" />
                   </span>
