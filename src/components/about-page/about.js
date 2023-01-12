@@ -7,8 +7,7 @@ import "./about.css";
 import Navbar from "../../common/navbar/navbar";
 import anim from "../../assets/anim1.gif";
 import Loader from "../Loader";
-function About() {
-  const [isLoading, setLoading] = useState(false);
+function About({ isLoading, setLoading }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
@@ -19,11 +18,16 @@ function About() {
 
   return (
     <>
-      {" "}
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <div className="about-bg">
+      <div className="about-bg">
+        {isLoading ? <Loader /> : <></>}
+        <div
+          style={
+            isLoading
+              ? { opacity: 0 }
+              : { animation: "fade_in_page 500ms ease-out" }
+          }
+          className={isLoading ? "loader-trans" : ""}
+        >
           <img className="about-bgimage" src={bg}></img>
           <div className="videoTag">
             <img className="videoTag" src={anim} alt="my-gif" />
@@ -49,7 +53,7 @@ function About() {
             </p>
           </div>
         </div>
-      )}
+      </div>
     </>
   );
 }

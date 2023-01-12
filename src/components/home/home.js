@@ -16,11 +16,14 @@ function Home({ isLoading, setLoading }) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 2100);
+    }, 3000);
 
     return () => clearTimeout(timeout);
   }, []);
 
+  function handleClick() {
+    window.location.href = "https://forms.gle/17FZAao7NnVbMi7u9";
+  }
   return (
     <div className="back">
       {isLoading ? <Loader /> : <></>}
@@ -57,7 +60,7 @@ function Home({ isLoading, setLoading }) {
               Amidst the dusty deserts of Egypt we found some extraterrestrial
               elements. To discover join hands with us.{" "}
             </div>
-            <button className="preReg shadowfilter">
+            <button className="preReg shadowfilter" onClick={handleClick}>
               {" "}
               <span className="buttonText"> PRE-REGISTER</span>
             </button>

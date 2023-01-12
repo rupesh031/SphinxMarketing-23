@@ -13,9 +13,18 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/sponsor" element={<Sponsors />} />
-          <Route path="/events" element={<Events />} />
+          <Route
+            path="/about"
+            element={<About isLoading={isLoading} setLoading={setLoading} />}
+          />
+          <Route
+            path="/sponsor"
+            element={<Sponsors isLoading={isLoading} setLoading={setLoading} />}
+          />
+          <Route
+            path="/events"
+            element={<Events isLoading={isLoading} setLoading={setLoading} />}
+          />
           <Route
             exact
             path="/"

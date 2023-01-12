@@ -19,7 +19,7 @@ function Menu(props) {
   const handleLogoClick = () => navigate("/");
 
   const handleClick = (page) => {
-    navigate(page);
+    window.location.href = page;
   };
   const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
   return (
