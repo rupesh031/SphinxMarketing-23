@@ -1,5 +1,9 @@
 import React from "react";
-import load from "./../assets/smoke.gif";
+
+
+
+import load from './../assets/splashn.gif'
+
 import { styled } from "@mui/material";
 import CircularProgress from "@mui/material/CircularProgress";
 
