@@ -70,14 +70,14 @@ function Events({ isLoading, setLoading }) {
               </p>
             </div>
             <div className="btns">
-           <div className="btns1">
+              <div className="btns1">
                 <button>
                   Surprise Soon!
-                  <span className="arrow-icon">
+                  {/* <span className="arrow-icon">
                     <img src={require("./arrow-icon.png")} alt="" />
-                  </span>
+                  </span> */}
                 </button>
-              </div>  
+              </div>
               <a
                 href="https://www.instagram.com/p/B3u2YDgn2FH/?utm_source=ig_web_button_share_sheet"
                 className="btns2"
