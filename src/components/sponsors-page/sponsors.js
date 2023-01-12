@@ -12,11 +12,11 @@ function Sponsors(props) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2500);
 
     return () => clearTimeout(timeout);
   }, []);
-  const [join, setjoin] = React.useState(true);
+
   const { setIsMenuOpen, isMenuOpen, isLoading, setLoading } = props;
   return (
     <div className="SponsorBack">
@@ -42,7 +42,7 @@ function Sponsors(props) {
         </div>
 
         <div className="sponsors-main">
-          {join ? <Box1 setjoin={setjoin} /> : <Box2 setjoin={setjoin} />}
+          <Box1 />
           {/* <Box2 /> */}
         </div>
       </div>

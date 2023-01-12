@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .Box {
     background: linear-gradient(144.56deg, #000000 3.87%, #1C1C1C 96.81%);
@@ -8,10 +9,12 @@
     width: 80%;
     height: 400px;
     display: flex;
+    gap: 48px;
     flex-direction: column;
     align-items: center;
     z-index: 40;
     padding: 30px 20px;
+    /* border: 2px solid green; */
 }
 
 .title {
@@ -20,35 +23,74 @@
     z-index: 0;
     display: flex;
     justify-content: center;
+    
   
 }
 
 .title img {
     width: 80%;
     max-width: 540px;
+    height: 120%;
 }
 .box-content{
     display: flex;
     height: 100%;
     /* margin: 20px 10px; */
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
     align-items: center;
     position: relative;
-    justify-content: center;
     width: 100%;
+    
+
 }
 
-.Box p {
-    font-family: 'Iceberg';
+.Box p  {
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 18px;
+    line-height: 25px;
     text-align: center;
-    letter-spacing: 0.06em;
-    color: #9F9F9F;
+    letter-spacing: 0.04em;
+    overflow: visible;
+
+    width:65%;
 }
+
+
+.gradient {
+    background:linear-gradient(45deg, #3269F5 20.74%, #FF102D 65.28%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    width:45%;
+}
+
+.txt{
+    background:#9F9F9F;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:#9F9F9F;
+    background-clip: text;
+    text-fill-color: none;
+}
+
+.txt-white {
+    color: white;
+    /* line-height: 70px !important; */
+
+    /* border-bottom: 2px solid red; */
+    
+}
+
+ .txt-white a {
+    text-decoration: none;
+    color: #FFC83A;
+    border-bottom: 2px solid #FFc83a;
+    line-height: 30px;
+ }
 
 .btn2 {
     display: flex;

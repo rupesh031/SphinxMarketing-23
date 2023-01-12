@@ -1,5 +1,5 @@
 import React from "react";
-import load from './../assets/splash.gif'
+import load from "./../assets/smoke.gif";
 import { styled } from "@mui/material";
 import CircularProgress from "@mui/material/CircularProgress";
 
@@ -27,8 +27,7 @@ export default function Loader() {
 
   return (
     <div className="loader">
-      <img src={load} className="loader-back"></img>
-        {" "}
+      <img src={load} className="loader-back"></img>{" "}
       {/* <div
         style={{
           // do your styles depending on your needs.
