@@ -70,14 +70,14 @@ function Events({ isLoading, setLoading }) {
               </p>
             </div>
             <div className="btns">
-              <div className="btns1">
-                <button>
-                  Join Tech Events
-                  <span className="arrow-icon">
-                    <img src={require("./arrow-icon.png")} alt="" />
-                  </span>
-                </button>
-              </div>
+//               <div className="btns1">
+//                 <button>
+//                   Join Tech Events
+//                   <span className="arrow-icon">
+//                     <img src={require("./arrow-icon.png")} alt="" />
+//                   </span>
+//                 </button>
+//               </div>
               <a
                 href="https://www.instagram.com/p/B3u2YDgn2FH/?utm_source=ig_web_button_share_sheet"
                 className="btns2"
