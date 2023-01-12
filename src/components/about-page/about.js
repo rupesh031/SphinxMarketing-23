@@ -44,12 +44,15 @@ function About({ isLoading, setLoading }) {
           <div className="about-heading">
             <img className="about-logo" src={about_head} alt=""></img>
             <p>
-              Science and Technology Society, MNIT is MNIT Jaipur’s society
-              which under the office of Dean Student Welfare, encourages
-              students to showcase their talent in technical activities. As we
-              bring back Sphinx 2K23 after 3 long years, trust us, Sphinx would
-              be an answer to all your curiosities and to sate your hunger for
-              emerging technological advancements.
+              Science and Technology Society (S&T), MNIT Jaipur is a society
+              under the Dean Student Welfare of MNIT Jaipur. The society
+              encourages young minds of the institute to showcase their
+              technical, management and behavioral skills and provides them with
+              a platform to bring out the best of themselves. S&T is delighted
+              to announce the return of the biggest annual techno- management
+              fest of the state. So, presenting before you - SPHINX'23. Let your
+              curiosities fly because SPHINX'23 is here to to sate your hunger
+              for emerging technological advancements.
             </p>
           </div>
         </div>
