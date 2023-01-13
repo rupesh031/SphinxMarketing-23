@@ -1,7 +1,4 @@
 import React from "react";
-
-
-
 import load from './../assets/splashn.gif'
 
 import { styled } from "@mui/material";

@@ -6,15 +6,15 @@ import Loader from "../Loader";
 function Events({ isLoading, setLoading }) {
   const event_list = [
     {
-      img: `./event1.jpg`,
-      desc: "Think.Code.Innovate",
-    },
-    {
-      img: `./event2.jpg`,
+      img: `./event1j.png`,
       desc: "Enjoy the show",
     },
     {
-      img: `./event3.jpg`,
+      img: `./event2j.png`,
+      desc: "Think.Ideate",
+    },
+    {
+      img: "./event3j.png",
       desc: "Evening with robots",
     },
   ];
