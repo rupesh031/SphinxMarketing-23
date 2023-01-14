@@ -57,7 +57,7 @@ function Home({ isLoading, setLoading }) {
             <img className="Mlogo shadowfilter" src={MLogo} alt=""></img>\
             <div className="content">
               {" "}
-              Amidst the dusty deserts of Egypt we found some extraterrestrial
+              Amidst the dusty deserts of Egypt we found extraterrestrial
               elements. To discover join hands with us.{" "}
             </div>
             <button className="preReg shadowfilter" onClick={handleClick}>
