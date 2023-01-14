@@ -79,7 +79,7 @@ function Events({ isLoading, setLoading }) {
                 </button>
               </div>
               <a
-                href="https://www.instagram.com/p/B3u2YDgn2FH/?utm_source=ig_web_button_share_sheet"
+                href="https://www.youtube.com/watch?v=y1cw2lXd5ho&feature=youtu.be"
                 className="btns2"
               >
                 <button>
