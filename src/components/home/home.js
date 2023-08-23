@@ -22,7 +22,7 @@ function Home({ isLoading, setLoading }) {
   }, []);
 
   function handleClick() {
-    window.location.href = "https://forms.gle/17FZAao7NnVbMi7u9";
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScce_eX0abwtJjxiPpPVmW8d18iqdBpTWBtQM_Ui0jsyU4j9A/viewform";
   }
   return (
     <div className="back">
